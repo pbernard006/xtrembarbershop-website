@@ -25,9 +25,6 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">
-        <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
-      </a>
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav ">
           <li class="nav-item px-2">

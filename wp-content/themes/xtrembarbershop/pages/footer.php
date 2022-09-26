@@ -26,6 +26,9 @@
             </div>
         </div>
     </div>
+    <div class="col-12 text-center pt-2 pb-3 bg-brown">
+        <span>© 2022 | Xtrem Barbershop by <a target="_blank" href="https://www.linkedin.com/in/paul-bernard-2286a9206/" class="link-white">Paul BERNARD</a></span>
+    </div>
 </div>
 </div>
 </body>
@@ -36,5 +39,15 @@
     .bg-grey {
         background-color: #4d4d4d;
         color: white;
+    }
+
+    .link-white {
+        color: white;
+        text-decoration: none;
+    }
+
+    .link-white:hover {
+        color: white;
+        text-decoration: underline;
     }
 </style>
