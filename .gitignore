@@ -31,8 +31,8 @@ wp-config.php
 *.log
 
 # htaccess
-/.htaccess
-
+.htaccess
+changelog.txt
 # All plugins
 # Note: If you wish to whitelist plugins,
 # uncomment the next line
