@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Appointment Hour Booking\n"
 "POT-Creation-Date: 2019-01-18 13:54+0100\n"
-"PO-Revision-Date: 2022-04-18 20:13+0200\n"
+"PO-Revision-Date: 2022-11-17 16:05+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-KeywordsList: _e;__;gettext\n"
 "X-Poedit-Basepath: ../../../../../..\n"
 "X-Poedit-SearchPath-1: a-site/wordpress-yosmany/wp-content/plugins/appointment-hour-booking\n"
@@ -1881,7 +1881,7 @@ msgid "Update the charset if you are getting problems displaying special/non-lat
 msgstr "Actualice el conjunto de caracteres si va a tener problemas para mostrar personajes especiales/no latinos. Una vez actualizado, debe volver a editar los caracteres especiales."
 
 #: a-site/wordpress-yosmany/wp-content/plugins/appointment-hour-booking/cp-settings.inc.php:228
-msgid "Use this area to add custom CSS styles. These styles will be keep safe even after updating the plugin."
+msgid "Use this area to add custom CSS styles. These styles will be safe even after updating the plugin."
 msgstr "Utilice esta área para agregar estilos CSS personalizados. Estos estilos se mantendrán seguros incluso después de actualizar el plugin."
 
 #: a-site/wordpress-yosmany/wp-content/plugins/appointment-hour-booking/cp-settings.inc.php:229
@@ -1921,7 +1921,7 @@ msgid "For other styles check the design section in the FAQ:"
 msgstr "Para otros estilos, consulte la sección de diseño en el FAQ:"
 
 #: a-site/wordpress-yosmany/wp-content/plugins/appointment-hour-booking/cp-settings.inc.php:318
-msgid "Use this area to add custom scripts. These scripts will be keep safe even after updating the plugin."
+msgid "Use this area to add custom scripts. These scripts will be safe even after updating the plugin."
 msgstr "Utilice esta área para agregar scripts personalizados personalizados. Estos scripts se mantendrán seguros incluso después de actualizar el plugin."
 
 #: a-site/wordpress-yosmany/wp-content/plugins/appointment-hour-booking/cp_admin_int_edition.inc.php:24

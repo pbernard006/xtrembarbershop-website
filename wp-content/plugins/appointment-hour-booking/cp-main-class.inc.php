@@ -577,7 +577,7 @@ class CP_AppBookingPlugin extends CP_APPBOOK_BaseClass {
             try { if (document.<?php echo $this->prefix; ?>_pform<?php echo '_'.$this->print_counter; ?>.<?php echo $this->prefix; ?>_pform_status.value == '1') return false; } catch (e) {}
             $dexQuery = jQuery.noConflict();
             try { document.<?php echo $this->prefix; ?>_pform<?php echo '_'.$this->print_counter; ?>.cp_ref_page.value = document.location; } catch (e) {}
-            $dexQuery = jQuery.noConflict();<?php if (!is_admin() && $this->get_option('cv_enable_captcha', CP_APPBOOK_DEFAULT_cv_enable_captcha) != 'false') { ?>
+            $dexQuery = jQuery.noConflict();<?php if (!is_admin() && $this->get_option('cv_enable_captcha', CP_APPBOOK_DEFAULT_cv_enable_captcha) != 'false' && function_exists('imagecreatetruecolor')) { ?>
             var result = '';
             try {
             if (!apphboverbooking_handler<?php echo $this->print_counter-1; ?>) {
@@ -1296,7 +1296,7 @@ class CP_AppBookingPlugin extends CP_APPBOOK_BaseClass {
         if (
                !apply_filters( 'cpappb_valid_submission', true) ||
                (
-                   (!is_admin() && $this->get_option('cv_enable_captcha', CP_APPBOOK_DEFAULT_cv_enable_captcha) != 'false') &&
+                   (!is_admin() && $this->get_option('cv_enable_captcha', CP_APPBOOK_DEFAULT_cv_enable_captcha) != 'false' && function_exists('imagecreatetruecolor')) &&
                    ( (strtolower($this->get_param('hdcaptcha_'.$this->prefix.'_post')) != strtolower($_SESSION['rand_code'.$sequence])) ||
                      ($_SESSION['rand_code'.$sequence] == '')
                    )

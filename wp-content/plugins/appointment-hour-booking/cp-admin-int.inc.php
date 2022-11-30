@@ -157,21 +157,24 @@ $nonce = wp_create_nonce( 'cpappb_actions_admin' );
             var randcaptcha = 1;
             function generateCaptcha()
             {
-               var d=new Date();
-               var f = document.cpformconf;
-               var qs = "&width="+f.cv_width.value;
-               qs += "&height="+f.cv_height.value;
-               qs += "&letter_count="+f.cv_chars.value;
-               qs += "&min_size="+f.cv_min_font_size.value;
-               qs += "&max_size="+f.cv_max_font_size.value;
-               qs += "&noise="+f.cv_noise.value;
-               qs += "&noiselength="+f.cv_noise_length.value;
-               qs += "&bcolor="+f.cv_background.value.replace('#','');
-               qs += "&border="+f.cv_border.value.replace('#','');
-               qs += "&font="+f.cv_font.options[f.cv_font.selectedIndex].value;
-               qs += "&r="+(randcaptcha++);
-
-               document.getElementById("captchaimg").src= "<?php echo esc_js($this->get_site_url(true).'?'.$this->prefix.'_captcha=captcha&inAdmin=1'); ?>"+qs;
+               try
+               {
+                   var d=new Date();
+                   var f = document.cpformconf;
+                   var qs = "&width="+f.cv_width.value;
+                   qs += "&height="+f.cv_height.value;
+                   qs += "&letter_count="+f.cv_chars.value;
+                   qs += "&min_size="+f.cv_min_font_size.value;
+                   qs += "&max_size="+f.cv_max_font_size.value;
+                   qs += "&noise="+f.cv_noise.value;
+                   qs += "&noiselength="+f.cv_noise_length.value;
+                   qs += "&bcolor="+f.cv_background.value.replace('#','');
+                   qs += "&border="+f.cv_border.value.replace('#','');
+                   qs += "&font="+f.cv_font.options[f.cv_font.selectedIndex].value;
+                   qs += "&r="+(randcaptcha++);
+                   
+                   document.getElementById("captchaimg").src= "<?php echo esc_js($this->get_site_url(true).'?'.$this->prefix.'_captcha=captcha&inAdmin=1'); ?>"+qs;
+               } catch (e) {}
             }
             
 
@@ -712,7 +715,15 @@ $nonce = wp_create_nonce( 'cpappb_actions_admin' );
              <td colspan="2" rowspan="2">
                <?php _e('Preview','appointment-hour-booking'); ?>:<br />
                  <br />
+                <?php if (!function_exists('imagecreatetruecolor')) { ?>
+                 <div style="color: #009900;font-weight:normal; border: 1px dotted black; padding:10px;max-width: 390px; background-color:#ffffdd">
+                  <strong>PHP GD Image Library</strong> not enabled in the server.<br />
+                  This library is required to be able to display the captcha image.<br />
+                  Please contact your hosting support to enable this feature.
+                 </div>
+                <?php } else { ?>
                 <img src="<?php echo esc_attr($this->get_site_url(true).'?'.$this->prefix.'_captcha=captcha&inAdmin=1'); ?>"  id="captchaimg" alt="security code" border="0"  />
+                <?php }  ?>
              </td>
             </tr>
 

@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: iso-8859-1\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -1771,7 +1771,7 @@ msgid "Update the charset if you are getting problems displaying special/non-lat
 msgstr "Обновите кодировку, если у вас возникают проблемы с отображением специальных / нелатинских символов. После обновления вам нужно снова отредактировать специальные символы."
 
 #: cp-settings.inc.php:228
-msgid "Use this area to add custom CSS styles. These styles will be keep safe even after updating the plugin."
+msgid "Use this area to add custom CSS styles. These styles will be safe even after updating the plugin."
 msgstr "Используйте эту область для добавления пользовательских стилей CSS. Эти стили будут сохранены даже после обновления плагина."
 
 #: cp-settings.inc.php:229
@@ -1811,7 +1811,7 @@ msgid "For other styles check the design section in the FAQ:"
 msgstr "Для других стилей проверьте раздел дизайна в FAQ:"
 
 #: cp-settings.inc.php:318
-msgid "Use this area to add custom scripts. These scripts will be keep safe even after updating the plugin."
+msgid "Use this area to add custom scripts. These scripts will be safe even after updating the plugin."
 msgstr "Используйте эту область для добавления пользовательских сценариев. Эти скрипты будут в безопасности даже после обновления плагина."
 
 #: cp_admin_int_edition.inc.php:24

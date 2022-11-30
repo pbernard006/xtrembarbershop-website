@@ -22,7 +22,7 @@
     <div class="dfield"><!--addons-payment-options--></div>
     <div class="clearer"></div>
  </div>
-<?php if (!is_admin() && $this->get_option('cv_enable_captcha', CP_APPBOOK_DEFAULT_cv_enable_captcha) != 'false') { ?>
+<?php if (!is_admin() && $this->get_option('cv_enable_captcha', CP_APPBOOK_DEFAULT_cv_enable_captcha) != 'false' && function_exists('imagecreatetruecolor')) { ?>
   <?php _e("Security Code",'appointment-hour-booking'); ?>:<br />
   <img src="<?php echo esc_attr($this->fixurl($this->get_site_url(), $this->prefix.'_captcha=captcha&ps=_'.$this->print_counter.'&inAdmin=1&width='.$this->get_option('cv_width', CP_APPBOOK_DEFAULT_cv_width).'&height='.$this->get_option('cv_height', CP_APPBOOK_DEFAULT_cv_height).'&letter_count='.$this->get_option('cv_chars', CP_APPBOOK_DEFAULT_cv_chars).'&min_size='.$this->get_option('cv_min_font_size', CP_APPBOOK_DEFAULT_cv_min_font_size).'&max_size='.$this->get_option('cv_max_font_size', CP_APPBOOK_DEFAULT_cv_max_font_size).'&noise='.$this->get_option('cv_noise', CP_APPBOOK_DEFAULT_cv_noise).'&noiselength='.$this->get_option('cv_noise_length', CP_APPBOOK_DEFAULT_cv_noise_length).'&bcolor='.$this->get_option('cv_background', CP_APPBOOK_DEFAULT_cv_background).'&border='.$this->get_option('cv_border', CP_APPBOOK_DEFAULT_cv_border).'&font='.$this->get_option('cv_font', CP_APPBOOK_DEFAULT_cv_font))); ?>"  id="captchaimg<?php echo '_'.esc_attr($this->print_counter); ?>" alt="security code" border="0" class="skip-lazy" />
   <br /><?php _e("Please enter the security code",'appointment-hour-booking'); ?>:<br />

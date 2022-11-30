@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -1779,7 +1779,7 @@ msgid "Update the charset if you are getting problems displaying special/non-lat
 msgstr ""
 
 #: cp-settings.inc.php:228
-msgid "Use this area to add custom CSS styles. These styles will be keep safe even after updating the plugin."
+msgid "Use this area to add custom CSS styles. These styles will be safe even after updating the plugin."
 msgstr ""
 
 #: cp-settings.inc.php:229
@@ -1819,7 +1819,7 @@ msgid "For other styles check the design section in the FAQ:"
 msgstr ""
 
 #: cp-settings.inc.php:318
-msgid "Use this area to add custom scripts. These scripts will be keep safe even after updating the plugin."
+msgid "Use this area to add custom scripts. These scripts will be safe even after updating the plugin."
 msgstr ""
 
 #: cp_admin_int_edition.inc.php:24

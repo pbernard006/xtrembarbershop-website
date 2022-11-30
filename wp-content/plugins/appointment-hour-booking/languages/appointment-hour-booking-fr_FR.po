@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Appointment Hour Booking\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-18 14:27+0100\n"
-"PO-Revision-Date: 2022-04-18 20:17+0200\n"
+"PO-Revision-Date: 2022-11-17 16:05+0100\n"
 "Last-Translator: Gerald Cometto <gecometto@hotmail.com>\n"
 "Language-Team: Français\n"
 "Language: fr_FR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -1769,7 +1769,7 @@ msgid "Update the charset if you are getting problems displaying special/non-lat
 msgstr ""
 
 #: cp-settings.inc.php:228
-msgid "Use this area to add custom CSS styles. These styles will be keep safe even after updating the plugin."
+msgid "Use this area to add custom CSS styles. These styles will be safe even after updating the plugin."
 msgstr ""
 
 #: cp-settings.inc.php:229
@@ -1809,7 +1809,7 @@ msgid "For other styles check the design section in the FAQ:"
 msgstr ""
 
 #: cp-settings.inc.php:318
-msgid "Use this area to add custom scripts. These scripts will be keep safe even after updating the plugin."
+msgid "Use this area to add custom scripts. These scripts will be safe even after updating the plugin."
 msgstr ""
 
 #: cp_admin_int_edition.inc.php:24

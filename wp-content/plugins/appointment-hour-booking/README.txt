@@ -1319,7 +1319,16 @@ Please note that the pro features aren't advised as part of the free plugin in t
 = 1.3.75 =
 * CSS improvements
 
+= 1.3.76 =
+* Captcha GD Library detection
+
+= 1.3.77 =
+* Translations update
+
+= 1.3.78 =
+* Admin intf update
+
 == Upgrade Notice ==
 
-= 1.3.75 =
-* CSS improvements
+= 1.3.78 =
+* Admin intf update
