@@ -3,10 +3,14 @@
 /*
 Template name: Reservation
 */
-include(__DIR__ . "/header.php"); ?>
+include(__DIR__ . "/header.php");
 
-<div class="container pt-5">
-    <h1 class="mt-5">Réservation pour une coupe</h1>
+// Récupérer type de coupe dans l'url
+$service = $_GET['service'];
+?>
+
+<div id="booking" class="container">
+    <h1 class="mt-4 pt-md-2 mt-md-5">Réservation pour : <?php echo $service; ?></h1>
     <?php
     echo do_shortcode(apply_filters('the_content', '[CP_APP_HOUR_BOOKING id="1"]
     ')); ?>
@@ -53,6 +57,38 @@ include(__DIR__ . "/header.php"); ?>
     .ui-datepicker-title {
         font-size: 1.3em;
     }
+
+    #fbuilder .slots div {
+        display: inline-block;
+        border: none !important;
+        margin: 5px;
+        padding: 1px;
+        border-radius: 13px;
+    }
+
+    #fbuilder .slots div a {
+        background: #ededed;
+        box-shadow: none;
+        display: inline-block;
+        padding: 4px;
+        text-decoration: none;
+        color: black;
+        border-radius: 10px;
+    }
+
+    .cancel {
+        color: #6e6969;
+        text-decoration: none;
+    }
+
+    .cancel:hover {
+        color: #747474;
+        text-decoration: none;
+    }
+
+    .ahbfield_service {
+        display: none;
+    }
 </style>
 
 <?php include(__DIR__ . "/footer.php"); ?>
@@ -66,8 +102,17 @@ include(__DIR__ . "/header.php"); ?>
 
         $('.pbSubmit').addClass('btn');
         $('.pbSubmit').addClass('btn-primary');
-        $('.pbSubmit').removeClass('pbSubmit');
+        $('.pbSubmit').addClass('mt-3');
+        //$('.pbSubmit').removeClass('pbSubmit');
 
         $('div').addClass('text-center');
+
+        $("#booking").removeClass('text-center');
+
+        $('#field_1-1').addClass('mt-4');
+        $('#email_1').addClass('mt-1');
+        $('#fieldname3_1').addClass('mt-1');
+
+        $('.ahbfield_service').val(30).trigger('change');
     });
 </script>
